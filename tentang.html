@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NusaMart - Produk Nusantara</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f8f3eb;
+      color:#333;
+    }
+
+    header{
+      background:linear-gradient(90deg,#8B4513,#D2691E);
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:2rem;
+    }
+
+    nav{
+      margin-top:10px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 10px;
+      font-weight:bold;
+    }
+
+    .hero{
+      height:300px;
+      background:url('') center/cover;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero h2{
+      background:rgba(0,0,0,0.5);
+      padding:15px 25px;
+      border-radius:10px;
+      font-size:2rem;
+    }
+
+    .about{
+      padding:60px 20px;
+      background:#fffaf3;
+    }
+
+    .about-container{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .about-text{
+      flex:1;
+      min-width:300px;
+    }
+
+    .about-text h2{ 
+      color:#8B4513;
+      font-size:2rem;
+      margin-bottom:20px;
+    }
+
+    .about-text p{
+      margin-bottom:15px;
+      line-height:1.7;
+    }
+
+    .about-image{
+      flex:1;
+      min-width:300px;
+    }
+
+    .about-image img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn-about{
+      display:inline-block;
+      margin-top:10px;
+      background:#8B4513;
+      color:white;
+      padding:10px 20px;
+      border-radius:8px;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .btn-about:hover{
+      background:#5c2d0c;
+    }
+
+    footer{
+      background:#8B4513;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      .hero h2{
+        font-size:1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Angkasa</h1>
+    <p>Produk Khas Nusantara 🇮🇩</p>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="index.html#produk">Produk</a>
+      <a href="#">Tentang</a>
+      <a href="dokumen.html">Dokumentasi</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Cita Rasa & Budaya Angkasa Dalam tiga produk</h2>
+  </section>
+
+  <section class="about">
+    <div class="about-container">
+
+      <div class="about-text">
+        <h2>Tentang Kami</h2>
+
+        <p>
+          NusaMart hadir untuk memperkenalkan produk khas Nusantara
+          kepada masyarakat Indonesia maupun dunia.
+        </p>
+
+        <p>
+          Kami bekerja sama dengan UMKM lokal untuk menghadirkan
+          produk berkualitas seperti kopi tradisional, batik,
+          dan makanan khas daerah.
+        </p>
+
+        <p>
+          Dengan membeli produk di NusaMart, Anda ikut mendukung
+          pengrajin dan usaha lokal Indonesia 🇮🇩
+        </p>
+
+        <a href="profil.html" class="btn-about">Profile</a>
+      </div>
+
+      <div class="about-image">
+        <img src="">
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Angkasa | Bangga Produk Indonesia 🇮🇩</p>
+  </footer>
+
+</body>
+</html>

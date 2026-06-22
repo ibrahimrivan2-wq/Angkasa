@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - NusaMart</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f8f3eb;
+      color:#333;
+    }
+
+    header{
+      background:linear-gradient(90deg,#8B4513,#D2691E);
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    nav{
+      margin-top:10px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 10px;
+      font-weight:bold;
+    }
+
+    .contact{
+      padding:60px 20px;
+    }
+
+    .contact-container{
+      max-width:1000px;
+      margin:auto;
+      display:flex;
+      gap:40px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .contact-info{
+      flex:1;
+      min-width:300px;
+    }
+
+    .contact-info h2{
+      color:#8B4513;
+      margin-bottom:20px;
+      font-size:2rem;
+    }
+
+    .contact-info p{
+      margin-bottom:15px;
+      line-height:1.7;
+    }
+
+    .contact-form{
+      flex:1;
+      min-width:300px;
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+      width:100%;
+      padding:12px;
+      margin-bottom:15px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      outline:none;
+    }
+
+    .contact-form textarea{
+      resize:none;
+      height:120px;
+    }
+
+    .btn{
+      background:#8B4513;
+      color:white;
+      border:none;
+      padding:12px 20px;
+      border-radius:8px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#5c2d0c;
+    }
+
+    footer{
+      margin-top:40px;
+      background:#8B4513;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:768px){
+      .contact-container{
+        flex-direction:column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NusaMart</h1>
+    <p>Hubungi Kami 📞</p>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="index.html#produk">Produk</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="dokumen.html">Dokumentasi</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+
+    <div class="contact-container">
+
+      <div class="contact-info">
+        <h2>Kontak Kami</h2>
+
+        <p>
+          Punya pertanyaan, kritik, atau ingin bekerja sama dengan
+          ANGKASA? Silakan hubungi kami melalui form di samping.
+        </p>
+
+        <p><strong>📍 Alamat:</strong> SMK IBG 03</p>
+        <p><strong>📧 Email:</strong> ibrahimrivan2@gmail.com</p>
+        <p><strong>📞 Telepon:</strong> +62 838 2966 2406</p>
+
+      </div>
+
+      <div class="contact-form">
+
+        <form>
+          <input type="text" placeholder="Nama Lengkap" required>
+
+          <input type="email" placeholder="Email" required>
+
+          <textarea placeholder="Tulis pesan Anda..." required></textarea>
+
+          <button type="submit" class="btn">
+            Kirim Pesan
+          </button>
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 NusaMart | Produk Nusantara 🇮🇩</p>
+  </footer>
+
+</body>
+</html>

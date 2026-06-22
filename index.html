@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Angkasa - Produk galaksi</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f8f3eb;
+      color:#333;
+    }
+
+    header{
+      background:linear-gradient(90deg,#8B4513,#D2691E);
+      color:white;
+      padding:20px;
+      position:relative;
+    }
+
+    .header-top{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* Logo + Judul */
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand img{
+      width:50px;
+      height:50px;
+      object-fit:contain;
+      border-radius:8px;
+    }
+
+    .brand-text h1{
+      font-size:2rem;
+      line-height:1.2;
+    }
+
+    .brand-text p{
+      margin-top:2px;
+      font-size:14px;
+    }
+
+    nav{
+      display:flex;
+      gap:20px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.2s;
+    }
+
+    nav a:hover{
+      opacity:0.8;
+    }
+
+    /* Tombol hamburger */
+    .hamburger{
+      display:none;
+      flex-direction:column;
+      gap:5px;
+      background:none;
+      border:none;
+      cursor:pointer;
+      padding:5px;
+    }
+
+    .hamburger span{
+      width:25px;
+      height:3px;
+      background:white;
+      border-radius:2px;
+      transition:0.3s;
+    }
+
+    .hamburger.active span:nth-child(1){
+      transform:rotate(45deg) translate(8px, 8px);
+    }
+    .hamburger.active span:nth-child(2){
+      opacity:0;
+    }
+    .hamburger.active span:nth-child(3){
+      transform:rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* Hero section */
+    .hero{
+      height:300px;
+      background:transparent;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero h2{
+      background:rgba(0,0,0,0.5);
+      padding:15px 25px;
+      border-radius:10px;
+      font-size:2rem;
+    }
+
+    .container{
+      padding:40px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:30px;
+      font-size:2rem;
+      color:#8B4513;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:15px;
+    }
+
+    .card-content h3{
+      margin-bottom:10px;
+      color:#8B4513;
+    }
+
+    .price{
+      color:#d35400;
+      font-weight:bold;
+      margin:10px 0;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#8B4513;
+      color:white;
+      padding:10px 15px;
+      border-radius:8px;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#5c2d0c;
+    }
+
+    footer{
+      background:#8B4513;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    /* Responsive */
+    @media (max-width:768px){
+      nav{
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background:#8B4513;
+        flex-direction:column;
+        align-items:center;
+        padding:20px 0;
+        gap:15px;
+        display:none;
+        z-index:100;
+      }
+
+      nav.active{
+        display:flex;
+      }
+
+      .hamburger{
+        display:flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <!-- Logo + Judul -->
+      <div class="brand">
+        <img src="logo.jpg" alt="Logo NusaMart">
+        <div class="brand-text">
+          <h1>ANGKASA</h1>
+          <p>Kelompok Angkasa</p>
+        </div>
+      </div>
+      
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu">
+        <a href="#">Beranda</a>
+        <a href="#produk">Produk</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="dokumen.html">Dokumentasi</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url('ganti-gambar-kamu.jpg');">
+    <h2>Cita Rasa & Budaya Angkasa Dalam 3 Produk</h2>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Produk Unggulan</h2>
+
+    <div class="products">
+      <div class="card" id="produk">
+        <img src="celengan.jpg" alt="celengan">
+        <div class="card-content">
+          <h3>Celengan Tradisonal</h3>
+          <p>Celengan tradisonal yang terbuat dari batok kelapa.</p>
+          <div class="price">Rp 25.000</div>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="lampion.jpg" alt="lampion">
+        <div class="card-content">
+          <h3>Lampion Tradisional</h3>
+          <p>Lampion tradisonal yang terbuat dari batok kelapa.</p>
+          <div class="price">Rp 40.000</div>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="gayung.jpg" alt="gayung">
+        <div class="card-content">
+          <h3>Gayung tradisonal</h3>
+          <p>Gayung tradisonal yang terbuat dari batok kelapa.</p>
+          <div class="price">Rp 30.000</div>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Angkasa | Bangga Dengan Produk Indonesia 🇮🇩</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

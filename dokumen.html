@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokumentasi - NusaMart</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f8f3eb;
+      color:#333;
+    }
+
+    header{
+      background:linear-gradient(90deg,#8B4513,#D2691E);
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    header h1{
+      margin-bottom:10px;
+    }
+
+    nav{
+      margin-top:10px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 10px;
+      font-weight:bold;
+    }
+
+    .documentation{
+      padding:50px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .title h2{
+      color:#8B4513;
+      font-size:2rem;
+      margin-bottom:10px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    /* Style untuk gambar */
+    .card img{
+      width:100%;
+      height:200px;
+      object-fit:cover; /* biar foto kepotong rapi, gak gepeng */
+      display:block;
+    }
+
+    /* Style untuk placeholder */
+    .image-placeholder{
+      width:100%;
+      height:200px;
+      background:#d9d9d9;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:4rem;
+      color:#777;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      color:#8B4513;
+      margin-bottom:10px;
+    }
+
+    .card-content p{
+      line-height:1.6;
+      font-size:14px;
+      color:#555;
+    }
+
+    footer{
+      margin-top:40px;
+      background:#8B4513;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NusaMart</h1>
+    <p>Halaman Dokumentasi 📸</p>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="index.html#produk">Produk</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="#">Dokumentasi</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="documentation">
+
+    <div class="title">
+      <h2>Dokumentasi Kegiatan</h2>
+      <p>Kumpulan dokumentasi aktivitas dan pengembangan website.</p>
+    </div>
+
+    <div class="gallery">
+
+      <div class="card">
+        <img src="alat.jpg" alt="Alat">
+        <div class="card-content">
+          <h3>Pembuatan Celengan</h3>
+          <p>
+          Pada proses ini kami sedang memotong batok kelapa dan membersihkan lapisan lapisan yang kasar.  .
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="membersihkan.jpg" alt="bersih">
+        <div class="card-content">
+          <h3>Membersihkan Batok</h3>
+          <p>
+            Proses ini kami sedang membersihkan atau mengeluarkan isi dari kelapa tersebut.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="lampion.jpg" alt="lampion">
+        <div class="card-content">
+          <h3>Memasang Lampu</h3>
+          <p>
+            Pada tahap ini kami sedang membuat dudukan atau tempat bagi lampu tersebut.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+     <img src="bahan.jpg" alt="bahan">⅞
+        <div class="card-content">
+          <h3>Memasang Batok</h3>
+          <p>
+           selanjutnya memasang bagian batok kelapa untuk menyelimuti lampu tersebut.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+     <img src="tarata.jpg" alt="tarata"
+        <div class="card-content">
+          <h3>Membuat Bagian Gagang</h3>
+          <p>
+            Gayung ini kami buat dengan ketahanan yang sudah pasti kuat dan anti pecah.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="terete.jpg" alt="terete"
+        <div class="card-content">
+          <h3>Final Project</h3>
+          <p>
+            Gayung ini pun bisa digunakan dalam beberapa hal .
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Angkasa dengan ciri khas nya 🇮🇩</p>
+  </footer>
+
+</body>
+</html>

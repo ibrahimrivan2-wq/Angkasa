@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Tim - NusaMart</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f8f3eb;
+      color:#333;
+    }
+  
+    .photo{
+      width:120px;
+      height:120px;
+      margin:auto;
+      border-radius:50%;
+      overflow:hidden; /* penting biar foto gak keluar dari lingkaran */
+      background:#d9d9d9;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:3rem;
+      color:#777;
+      margin-bottom:15px;
+    }
+
+    .photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover; /* biar foto kepotong rapi, gak gepeng */
+      display:block;
+    }
+
+    header{
+      background:linear-gradient(90deg,#8B4513,#D2691E);
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    header h1{
+      margin-bottom:10px;
+    }
+
+    .team{
+      padding:50px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .team-title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .team-title h2{
+      font-size:2rem;
+      color:#8B4513;
+    }
+
+    .team-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:15px;
+      text-align:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .name{
+      font-weight:bold;
+      color:#8B4513;
+      margin-bottom:5px;
+    }
+
+    .role{
+      font-size:14px;
+      color:#666;
+    }
+
+    footer{
+      margin-top:40px;
+      background:#8B4513;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NusaMart Team</h1>
+    <p>Ini Adalah Kelompok Kami</p>
+  </header>
+
+  <section class="team">
+
+    <div class="team-title">
+      <h2>Tim Kami</h2>
+    </div>
+
+    <div class="team-container">
+
+      <div class="card">
+        <div class="photo">
+          <img src="rivan.jpg" alt="Rivan">
+        </div>
+        <div class="name">Rivan Ibrahim</div>
+        <div class="kelas">X TKJ</div>
+        <div class="role">Website</div>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <img src="andrean.jpg" alt="andrean">
+        </div>
+        <div class="name">Andreyana kholik</div>
+        <div class="kelas">X PM B</div>
+        <div class="role">proposal</div>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <img src="cantika.jpg" alt="cantika">
+        </div>
+        <div class="name">Chantiqa Asyna Tiurma Henny Hutasoit</div>
+        <div class="kelas">X MPLB B</div>
+        <div class="role">Jurnal</div>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <img src="rarin.jpg" alt="rarin">
+        </div>  
+        <div class="name">airin aulia putri</div>
+        <div class="kelas">X PM A</div>
+        <div class="role">Proposal</div>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <img src="ebit.jpg" alt="ebit">
+        </div>
+        <div class="name">m.suhaebit maskam</div>
+        <div class="kelas">X MPLB A</div>   
+        <div class="role">Jurnal</div>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <img src="Siti.jpg" alt="siti">
+        </div>
+        <div class="name">Siti Nur Padilah</div>
+        <div class="kelas">X DKV</div>
+        <div class="role">Desain</div>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <img src="arif.jpg" alt="arif">
+        </div>
+        <div class="name">Muhammad arif firdaus</div>
+        <div class="kelas">X DKV</div>
+        <div class="role">Desain</div>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <img src="badeng.jpg" alt="Badeng">
+        </div>
+        <div class="name">m.rizky maulana</div>
+        <div class="kelas"> X PM B</div>
+        <div class="role">Proposal</div>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <img src="luna.jpg" alt="luna">
+        </div>
+        <div class="name">Luna Ismi Yanti</div>
+        <div class="kelas">X MPLB A</div>
+        <div class="role">Jurnal</div>
+      </div>
+
+      <div class="card">
+        <div class="photo">
+          <img src="jihan.jpg" alt="jihan">
+        </div>
+        <div class="name">jihan ramadan</div>
+        <div class="kelas">X PM A</div>
+        <div class="role">Proposal</div>
+          
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Angkasa Team 🇮🇩</p>
+  </footer>
+
+</body>
+</html>
